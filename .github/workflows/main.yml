@@ -7,6 +7,7 @@ jobs:
     steps:
       - name: testing
         uses: actions/checkout@v3
+      - name: run
         run: |
           ls -ahl
           pwd
