@@ -1,0 +1,9 @@
+jobs:
+  check-links:
+    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
+    steps:
+      - name: testing
+        users: alpine:latest
+        run: |
+          ls -ahl
+          pwd
