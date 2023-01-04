@@ -10,8 +10,6 @@ jobs:
       - name: testing
         uses: actions/checkout@v3
       - name: run
-        env:
-          - MY_SECRET: {{ MY_SECRET }}
         run: |
           ls -ahl
           pwd
