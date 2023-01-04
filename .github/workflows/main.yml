@@ -2,7 +2,7 @@ name: learn-github-actions
 on: [push]
 
 jobs:
-  check-links:
+  Test:
     runs-on: ubuntu-latest
     environment: Docker
     steps:
