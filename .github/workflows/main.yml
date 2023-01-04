@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   check-links:
-    runs-on: ubuntu-latest
+    runs-on: golang-1.20-rc-bullseye
     steps:
       - name: testing
         uses: actions/checkout@v3
