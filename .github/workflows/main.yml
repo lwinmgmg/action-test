@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
       - name: run
         env:
-          - MY_SECRET: {{ Docker.MY_SECRET }}
+          - MY_SECRET: {{ MY_SECRET }}
         run: |
           ls -ahl
           pwd
