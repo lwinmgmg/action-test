@@ -3,6 +3,8 @@ on: [push]
 
 jobs:
   check-links:
+    environment: 
+      name: Docker
     runs-on: ubuntu-latest
     steps:
       - name: testing
