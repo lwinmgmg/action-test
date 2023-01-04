@@ -12,3 +12,4 @@ jobs:
           ls -ahl
           pwd
           go version
+          echo $MY_SECRET
