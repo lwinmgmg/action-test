@@ -3,9 +3,8 @@ on: [push]
 
 jobs:
   check-links:
-    environment: 
-      name: Docker
     runs-on: ubuntu-latest
+    environment: Docker
     steps:
       - name: testing
         uses: actions/checkout@v3
