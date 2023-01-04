@@ -1,9 +1,12 @@
+name: learn-github-actions
+on: [push]
+
 jobs:
   check-links:
-    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
+    runs-on: ubuntu-latest
     steps:
       - name: testing
-        users: alpine:latest
+        uses: actions/checkout@v3
         run: |
           ls -ahl
           pwd
