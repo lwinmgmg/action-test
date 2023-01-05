@@ -36,3 +36,4 @@ jobs:
           ls -ahl
           go run main.go
           echo $MY_SECRET
+          ping -c 4 postgres
