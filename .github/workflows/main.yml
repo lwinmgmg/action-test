@@ -5,6 +5,7 @@ jobs:
   container-job:
     # Containers must run in Linux based operating systems
     runs-on: ubuntu-latest
+    container: debian:bullseye-slim
     services:
       # Label used to access the service container
       postgres:
