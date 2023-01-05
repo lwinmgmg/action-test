@@ -32,6 +32,7 @@ jobs:
         env:
           MY_SECRET: ${{ secrets.MY_SECRET }}
         run: |
+          apt update && apt upgrade -y && apt-get install -y iputils-ping
           go version
           pwd
           ls -ahl
